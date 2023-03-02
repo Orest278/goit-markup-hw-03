@@ -1,0 +1,148 @@
+/*primari-text SLATE
+title-text  NAVYBLUE
+accent  IRIS
+ */
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --page-title-color: #FFFFFF;
+    --logo-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
+    --button-background-color: #E7E9FC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.logo {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.logo-style {
+    color: var(--accent-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.link:hover{
+    color:var(--accent-color)
+}
+
+.contacts {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.intro {
+    background-color: var(--title-text-color);
+    color: var(--page-title-color);
+    font-size: 54px;
+    font-family: 'Roboto Slab', sans-serif;
+   font-weight: 700;
+    line-height: 1.11;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--page-title-color);
+    font-weight: 500;
+    top: 428px;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: normal;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.our-advantages{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h3{
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.card_name{
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+}
+
+.footer{
+    background-color: var(--title-text-color);
+
+}
+
+.logo-footer{
+    color: var(--logo-color);
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.footer-text{
+    color: var(--footer-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.button-line{
+    background-color: var(--button-background-color);
+    color: var(--accent-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.name-photo{
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2
+    }
