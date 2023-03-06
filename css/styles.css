@@ -10,59 +10,71 @@ accent  IRIS
     --logo-color: #F4F4FD;
     --footer-text-color: #E7E9FC;
     --button-background-color: #E7E9FC;
+    --buttin-color: #404BBF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     font-size: 16px;
+    background-color: var(--page-title-color);
 }
 
-li{
-    list-style-type: none;
-    text-decoration: none;
-    font-style: normal;
+.list{
+    list-style: none;
 }
 
 .logo {
     text-decoration: none;
-    list-style: none;
+    list-style-type: none;
+    color: var(--title-text-color);
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-weight: 800px;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
 }
 
 .logo-style {
     color: var(--accent-color);
 }
 
-.link {
+.nav-link {
     text-decoration: none;
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.link:hover{
+.nav-link:hover, 
+:focus{
     color:var(--accent-color)
 }
 
-.contacts {
+.contact-link {
     text-decoration: none;
-    list-style-type: none;
     color: var(--primary-text-color);
-    font-weight: 400;
+    font-style: normal; 
     line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-link:hover,
+:focus {
+    color: var(--accent-color)
 }
 
 .intro {
     background-color: var(--title-text-color);
+   
+}
+
+.hiro-title{
     color: var(--page-title-color);
-    font-size: 54px;
-    font-family: 'Roboto Slab', sans-serif;
-   font-weight: 700;
-    line-height: 1.11;
+        font-size: 54px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
 }
 
 .button {
@@ -86,24 +98,38 @@ li{
     overflow: hidden;
 }
 
-.our-advantages{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-}
 
-h3{
+.section-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+.future-title{
 font-style: normal;
 font-weight: 500;
+color: var(--primary-text-color);
 font-size: 20px;
 line-height: 1.2;
+letter-spacing: 0.02em;
+}
+
+.future-text{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .card_name{
-font-style: normal;
+color: var(--title-text-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+letter-spacing: 0.02em;
+}
+
+.card_prof{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer{
@@ -125,9 +151,8 @@ line-height: 1.2;
 
 .footer-text{
     color: var(--footer-text-color);
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .button-line{
@@ -139,10 +164,21 @@ line-height: 1.2;
     line-height: 1.5;
 }
 
-.name-photo{
+.button-line:hover,
+:focus{
+    color: var(--page-title-color);
+    background-color: var(--buttin-color);
+}
+
+.card-title{
     color: var(--title-text-color);
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2
+    line-height: 1.2;
+    letter-spacing: 0.02em;
     }
+
+.card-text{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
