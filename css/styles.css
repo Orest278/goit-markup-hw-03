@@ -49,7 +49,7 @@ body {
     letter-spacing: 0.02em;
 }
 .nav-link:hover, 
-:focus{
+.nav-link:focus{
     color:var(--accent-color)
 }
 
@@ -101,13 +101,11 @@ body {
 
 
 .section-title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
 }
 .future-title{
-font-style: normal;
 font-weight: 500;
 color: var(--primary-text-color);
 font-size: 20px;
