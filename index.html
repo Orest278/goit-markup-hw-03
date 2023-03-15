@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,145 +20,166 @@
 
   <body>
     <header>
-      <nav>
+      <div class="container main-nav">
         <a href="./index.html" class="logo"
           ><span class="logo-style">Web</span>Studio</a
         >
-        <ul class="list">
-          <li><a href="./index.html" class="nav-link">Studio</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
-          <li><a href="contacts" class="nav-link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+11000111-11-11" class="contact-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+
+        <nav>
+          <ul class="list site-nav">
+            <li class="item">
+              <a href="./index.html" class="nav-link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contact-address">
+          <ul class="list">
+            <li class="address">
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address">
+              <a href="tel:+11000111-11-11" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
       <section class="intro">
-        <h1 class="hiro-title">
-          Effective Solutions<br />
-          for Your Business
-        </h1>
+        <div class="container">
+          <h1 class="hiro-title">
+            Effective Solutions<br />
+            for Your Business
+          </h1>
 
-        <button type="button" class="button">Order Service</button>
+          <button type="button" class="button">Order Service</button>
+        </div>
+      </section>
+
+      <section class="ours-strategy">
+        <div class="container">
+          <h2 class="visually-hidden">Ours Strategy</h2>
+          <ul class="list">
+            <li class="container-text">
+              <h3 class="future-title">Strategy</h3>
+              <p class="future-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+
+            <li class="container-text">
+              <h3 class="future-title">Punctuality</h3>
+              <p class="future-text">
+                Bring the key message to the brand's audience ford the best
+                price within the shortest possible time.
+              </p>
+            </li>
+
+            <li class="container-text">
+              <h3 class="future-title">Diligence</h3>
+              <p class="future-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+
+            <li class="container-text">
+              <h3 class="future-title">Technologies</h3>
+              <p class="future-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
-        <h2 class="visually-hidden">Ours Strategy</h2>
-        <ul class="list">
-          <li>
-            <h3 class="future-title">Strategy</h3>
-            <p class="future-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
+        <div class="container">
+          <h2 class="section-title">What are we doing</h2>
 
-          <li>
-            <h3 class="future-title">Punctuality</h3>
-            <p class="future-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
+          <ul class="list">
+            <li class="about_item">
+              <img src="./images/rectangle2.jpg" alt="monitor" width="360" />
+            </li>
 
-          <li>
-            <h3 class="future-title">Diligence</h3>
-            <p class="future-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
+            <li class="about_item">
+              <img
+                src="./images/rectangle3.jpg"
+                alt="display mobile"
+                width="360"
+              />
+            </li>
 
-          <li>
-            <h3 class="future-title">Technologies</h3>
-            <p class="future-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+            <li class="about_item">
+              <img
+                src="./images/rectangle1.jpg"
+                alt="display mobile"
+                width="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2 class="section-title">What are we doing</h2>
+      <section class="our-team">
+        <div class="container">
+          <h2 class="our-team-title">Our Team</h2>
 
-        <ul class="list">
-          <li class="about_item">
-            <img src="./images/rectangle2.jpg" alt="monitor" width="360" />
-          </li>
+          <ul class="list">
+            <li class="content">
+              <img src="./images/img4.jpg" alt="person1" width="264" />
+              <h3 class="card_name">Mark Guerrero</h3>
+              <p class="card_prof">Product Designer</p>
+            </li>
 
-          <li class="about_item">
-            <img
-              src="./images/rectangle3.jpg"
-              alt="display mobile"
-              width="360"
-            />
-          </li>
+            <li class="content">
+              <img src="./images/img1.jpg" alt="person2" width="264" />
+              <h3 class="card_name">Tom Ford</h3>
+              <p class="card_prof">Frontend Developer</p>
+            </li>
 
-          <li class="about_item">
-            <img
-              src="./images/rectangle1.jpg"
-              alt="display mobile"
-              width="360"
-            />
-          </li>
-        </ul>
-      </section>
+            <li class="content">
+              <img src="./images/img2.jpg" alt="person3" width="264" />
+              <h3 class="card_name">Camila Garcia</h3>
+              <p class="card_prof">Marketing</p>
+            </li>
 
-      <section>
-        <h2 class="section-title">Our Team</h2>
-
-        <ul class="list">
-          <li>
-            <img src="./images/img4.jpg" alt="person1" width="264" />
-            <h3 class="card_name">Mark Guerrero</h3>
-            <p class="card_prof">Product Designer</p>
-          </li>
-
-          <li>
-            <img src="./images/img1.jpg" alt="person2" width="264" />
-            <h3 class="card_name">Tom Ford</h3>
-            <p class="card_prof">Frontend Developer</p>
-          </li>
-
-          <li>
-            <img src="./images/img2.jpg" alt="person3" width="264" />
-            <h3 class="card_name">Camila Garcia</h3>
-            <p class="card_prof">Marketing</p>
-          </li>
-
-          <li>
-            <img src="./images/img3.jpg" alt="person4" width="264" />
-            <h3 class="card_name">Daniel Wilson</h3>
-            <p class="card_prof">UI Designer</p>
-          </li>
-        </ul>
+            <li class="content">
+              <img src="./images/img3.jpg" alt="person4" width="264" />
+              <h3 class="card_name">Daniel Wilson</h3>
+              <p class="card_prof">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="./index.html" class="logo-footer"
-        ><span class="logo-style">WEB</span>STUDIO</a
-      >
+      <div class="container">
+        <div class="footer-list">
+          <a href="./index.html" class="logo-footer"
+            ><span class="logo-style">WEB</span>STUDIO</a
+          >
+        </div>
 
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

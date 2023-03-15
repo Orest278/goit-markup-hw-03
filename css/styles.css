@@ -21,10 +21,50 @@ body {
     background-color: var(--page-title-color);
 }
 
-.list{
-    list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{  
+    margin: 0;
 }
 
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font: inherit;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1158px;
+}
 .logo {
     text-decoration: none;
     list-style-type: none;
@@ -35,6 +75,25 @@ body {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    display: flex;
+}
+
+.site-nav{
+    display: flex;
+    margin-left: 76px;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+.site-nav .item {
+    margin-right: 40px;
+}
+.site-nav .item:last-child{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .logo-style {
@@ -61,6 +120,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+.contact-address{
+    margin-left: auto;
+}
+.list .address+.address {
+    margin-left: 40px;
+}
+
 .contact-link:hover,
 :focus {
     color: var(--accent-color)
@@ -68,7 +134,7 @@ body {
 
 .intro {
     background-color: var(--title-text-color);
-   
+   height: 600px;
 }
 
 .hiro-title{
@@ -76,6 +142,10 @@ body {
         font-size: 54px;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        padding-top: 188px;
+        padding-left: 316px;
+        padding-bottom: 48px;
+        padding-right: 316px;
 }
 
 .button {
@@ -83,6 +153,12 @@ body {
     color: var(--page-title-color);
     font-weight: 500;
     top: 428px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    letter-spacing: 0.04em;
+    min-width: 168px;
+    margin-left: 477px;
+    margin-right: 477px;
 }
 
 .visually-hidden{
@@ -104,6 +180,18 @@ body {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    padding-left: 403px;
+    padding-right: 402px;
+    padding-bottom: 72px;
+}
+
+.about_item{
+    margin-left: 24px;
+    padding-bottom: 120px;
+}
+
+.about_item:first-child{
+    margin-left: 0;
 }
 .future-title{
 font-weight: 500;
@@ -111,24 +199,66 @@ color: var(--primary-text-color);
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+padding-top: 120px;
+padding-bottom: 8px;
 }
 
+.ours-strategy{
+    padding-bottom: 120px;
+}
+
+.container-text{
+    margin-left: 24px;
+    max-width: 264px;
+}
+.container-text:first-child{
+    margin-left: 0;
+}
 .future-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
+
+.our-team{
+    background-color: var(--logo-color);
+    padding-bottom: 120px;
+}
+
+.our-team-title{
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    padding-top: 120px;
+    padding-left: 483px;
+    padding-right: 480px;
+    padding-bottom: 72px;
+}
 .card_name{
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-top: 32px;
+margin-bottom: 8px;
+text-align: center;
 }
 
+.content{
+    background-color: var(--page-title-color);
+    margin-left: 24px;
+    border-radius: 0px 0px 4px 4px;
+    max-width: 264px;
+}
+.content:first-child{
+    margin-left: 0;
+}
 .card_prof{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+    padding-bottom:32px ;
 }
 
 .footer{
@@ -146,12 +276,19 @@ letter-spacing: 0.02em;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+   
 }
 
+.footer-list{
+padding-top: 101.5px;
+    padding-bottom: 17.5px;
+}
 .footer-text{
     color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    padding-bottom: 100px;
 }
 
 .button-line{
@@ -161,8 +298,18 @@ letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 96px;
+
+    margin-left: 24px;
 }
 
+.portfolio-button{
+    padding-left: 247px;
+    padding-bottom: 72px;
+    
+}
 .button-line:hover,
 :focus{
     color: var(--page-title-color);
@@ -175,9 +322,31 @@ letter-spacing: 0.02em;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    padding-left: 16px;
+    margin-top: 32px;
+    margin-bottom: 8px;
     }
 
 .card-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-left: 16px;
+    padding-bottom: 32px;
 }
+.portfolio-list{
+    display: bllock;
+    flex-wrap: wrap;
+}
+
+.portfolio-card{
+    margin-left: 23px;
+    margin-bottom: 48px;
+    border: 1px solid var(--footer-text-color);
+}
+
+.portfolio-card:th-child(3n + 1){
+    margin-left: 0px;
+}
+
+.porfolio{
+border-bottom: 1px solid var(--footer-text-color);}
