@@ -57,7 +57,6 @@ button{
     list-style: none;
     display: flex;
     margin-left: auto;
-    
 }
 
 .container{
@@ -85,9 +84,8 @@ button{
 .main-nav{
     display: flex;
     align-items: center;
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
 }
+
 .site-nav .item {
     margin-right: 40px;
 }
@@ -101,15 +99,22 @@ button{
 }
 
 .nav-link {
+    display: block;
     text-decoration: none;
     color: var(--title-text-color);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .nav-link:hover, 
 .nav-link:focus{
     color:var(--accent-color)
+}
+
+.active{
+    color: var(--accent-color);
 }
 
 .contact-link {
@@ -128,13 +133,14 @@ button{
 }
 
 .contact-link:hover,
-:focus {
+.contact-link:focus {
     color: var(--accent-color)
 }
 
 .intro {
     background-color: var(--title-text-color);
-   height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hiro-title{
@@ -142,10 +148,8 @@ button{
         font-size: 54px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        padding-top: 188px;
-        padding-left: 316px;
         padding-bottom: 48px;
-        padding-right: 316px;
+        text-align: center;
 }
 
 .button {
@@ -161,6 +165,11 @@ button{
     margin-right: 477px;
 }
 
+.button:hover,
+.button:focus{
+    background-color: var(--buttin-color);
+
+}
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -175,6 +184,10 @@ button{
     overflow: hidden;
 }
 
+.we-doing{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .section-title{
     font-size: 36px;
@@ -187,9 +200,7 @@ button{
 
 .about_item{
     margin-left: 24px;
-    padding-bottom: 120px;
 }
-
 .about_item:first-child{
     margin-left: 0;
 }
@@ -199,12 +210,11 @@ color: var(--primary-text-color);
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-padding-top: 120px;
 padding-bottom: 8px;
 }
 
 .ours-strategy{
-    padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .container-text{
@@ -223,16 +233,15 @@ padding-bottom: 8px;
 .our-team{
     background-color: var(--logo-color);
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .our-team-title{
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    padding-top: 120px;
-    padding-left: 483px;
-    padding-right: 480px;
     padding-bottom: 72px;
+    text-align: center;
 }
 .card_name{
 color: var(--title-text-color);
@@ -263,6 +272,8 @@ text-align: center;
 
 .footer{
     background-color: var(--title-text-color);
+    padding-top: 100px;
+        padding-bottom: 100px;
 
 }
 
@@ -280,15 +291,13 @@ text-align: center;
 }
 
 .footer-list{
-padding-top: 101.5px;
-    padding-bottom: 17.5px;
+    margin-bottom: 17.5px;
 }
 .footer-text{
     color: var(--footer-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-    padding-bottom: 100px;
 }
 
 .button-line{
@@ -300,51 +309,57 @@ padding-top: 101.5px;
     line-height: 1.5;
     padding: 12px 24px;
     border-radius: 4px;
-    margin-top: 96px;
 
     margin-left: 24px;
 }
 
 .portfolio-button{
-    padding-left: 247px;
-    padding-bottom: 72px;
-    
+   margin-bottom: 72px;
+   display: flex;
+   justify-content: center;  
 }
 .button-line:hover,
-:focus{
-    color: var(--page-title-color);
+.button-line:focus{
+    color: var(--footer-text-color);
     background-color: var(--buttin-color);
 }
 
+.porfolio-title{
+    padding-top: 96px;
+}
 .card-title{
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-left: 16px;
-    margin-top: 32px;
     margin-bottom: 8px;
     }
 
 .card-text{
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
 .portfolio-list{
-    display: bllock;
+    display: flex;
     flex-wrap: wrap;
+    
 }
 
 .portfolio-card{
-    margin-left: 23px;
+    margin-left: 24px;
     margin-bottom: 48px;
-    border: 1px solid var(--footer-text-color);
 }
 
-.portfolio-card:th-child(3n + 1){
+.portfolio-border{
+    padding-left: 16px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--footer-text-color);
+    border-right: 1px solid var(--footer-text-color);
+    border-left: 1px solid var(--footer-text-color);
+}
+
+.portfolio-card:nth-child(3n + 1){
     margin-left: 0px;
 }
 
