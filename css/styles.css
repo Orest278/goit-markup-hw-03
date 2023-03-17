@@ -168,7 +168,7 @@ button{
     border-radius: 4px;
     padding: 16px 32px;
     letter-spacing: 0.04em;
-    width: 168px;
+    min-width: 168px;
     margin-left: 477px;
     margin-right: 477px;
 }
