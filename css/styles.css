@@ -59,6 +59,10 @@ button{
     margin-left: auto;
 }
 
+.porfolio-section{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .container{
     margin: 0 auto;
     padding: 0 15px;
@@ -75,6 +79,8 @@ button{
     line-height: 1.33;
     letter-spacing: 0.03em;
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .site-nav{
@@ -123,6 +129,8 @@ button{
     font-style: normal; 
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contact-address{
@@ -160,7 +168,7 @@ button{
     border-radius: 4px;
     padding: 16px 32px;
     letter-spacing: 0.04em;
-    min-width: 168px;
+    width: 168px;
     margin-left: 477px;
     margin-right: 477px;
 }
@@ -201,9 +209,16 @@ button{
 .about_item{
     margin-left: 24px;
 }
+
 .about_item:first-child{
     margin-left: 0;
 }
+
+.about-img{
+    max-width: 100%;
+    height: auto;
+}
+
 .future-title{
 font-weight: 500;
 color: var(--primary-text-color);
@@ -219,7 +234,7 @@ padding-bottom: 8px;
 
 .container-text{
     margin-left: 24px;
-    max-width: 264px;
+    width: 264px;
 }
 .container-text:first-child{
     margin-left: 0;
@@ -249,7 +264,6 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
-margin-top: 32px;
 margin-bottom: 8px;
 text-align: center;
 }
@@ -259,15 +273,20 @@ text-align: center;
     margin-left: 24px;
     border-radius: 0px 0px 4px 4px;
     max-width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .content:first-child{
     margin-left: 0;
+}
+
+.content-text{
+    padding: 32px 16px;
 }
 .card_prof{
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom:32px ;
 }
 
 .footer{
@@ -307,16 +326,17 @@ text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    padding: 12px 24px;
+    padding: 12px;
+    gap: 24px;
     border-radius: 4px;
-
-    margin-left: 24px;
+    cursor: pointer;
 }
 
 .portfolio-button{
    margin-bottom: 72px;
    display: flex;
-   justify-content: center;  
+   justify-content: center;
+   gap: 24px;  
 }
 .button-line:hover,
 .button-line:focus{
@@ -324,9 +344,6 @@ text-align: center;
     background-color: var(--buttin-color);
 }
 
-.porfolio-title{
-    padding-top: 96px;
-}
 .card-title{
     color: var(--title-text-color);
     font-weight: 500;
@@ -343,12 +360,11 @@ text-align: center;
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 48px 24px;
 }
 
 .portfolio-card{
-    margin-left: 24px;
-    margin-bottom: 48px;
+    
 }
 
 .portfolio-border{
