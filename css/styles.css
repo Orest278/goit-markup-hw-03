@@ -364,13 +364,10 @@ text-align: center;
     gap: 48px 24px;
 }
 
-.portfolio-card{
-    
-}
-
 .portfolio-border{
     padding-left: 16px;
     padding-bottom: 32px;
+    padding-top: 32px;
     border-bottom: 1px solid var(--footer-text-color);
     border-right: 1px solid var(--footer-text-color);
     border-left: 1px solid var(--footer-text-color);
